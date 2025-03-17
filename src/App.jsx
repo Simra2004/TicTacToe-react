@@ -53,6 +53,7 @@ const TicTacToe = () => {
       setBoard(Array(9).fill(null));
       return;
     }
+  }
     return (
       <>
         <Gameboard board={board} turn={turn} handleClick={handleClick} />
@@ -66,6 +67,5 @@ const TicTacToe = () => {
         </div>
       </>
     );
-  };
 };
 export default TicTacToe;
