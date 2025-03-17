@@ -7,7 +7,7 @@ const Gameboard = ({board,turn,handleClick}) => {
       <div className="turn">{turn} Turn</div>
       <div className="board">
         {board.map((cell, index) => (
-          <div key={index} className="cell" onClick={() => handleClick(index)}>
+          <div key={index} className="cell" onClick={() => [handleClick(index), winn]}>
             {cell}
           </div>
         ))}
